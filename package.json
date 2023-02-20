@@ -1,0 +1,22 @@
+{
+  "name": "try-microfronteds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "concurrently --kill-others \"npm run install_container\" \"npm run install_marketing\"",
+    "start": "concurrently --kill-others \"npm run marketing\" \"npm run container\"",
+    "install_container": "cd ./container && npm install",
+    "install_marketing": "cd ./marketing && npm install",
+    "container": "cd ./container && npm run start",
+    "marketing": "cd ./marketing && npm run start",
+    "cart": "cd ./cart && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "7.6.0"
+  }
+}
