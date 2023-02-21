@@ -36,3 +36,9 @@ También puedes ver los microfrontends de forma aislada [la app del comercio](ht
 * Deploy
     * Amazon S3 + CloudFront (Servidor)
     * Github Action (Cada vez que se despliega nuevo código en un mf se ejecutará un job que solo desplegará el mf modificado)
+* Dev
+    * React
+    * Webpack
+
+# Url proyecto
+[Live project](https://d3tbm2e2e0nz60.cloudfront.net/)
