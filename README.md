@@ -31,3 +31,8 @@ Esto levantará todos los mf y el host
 Abrir el navegador para ver el [orquestador/container](http://localhost:8080/).
 
 También puedes ver los microfrontends de forma aislada [la app del comercio](http://localhost:8081/)
+
+# Stack utilizado
+* Deploy
+    * Amazon S3 ()
+    * Github Action (Cada vez que se despliega nuevo código en un mf se ejecutará un job que solo desplegará el mf modificado)
