@@ -34,5 +34,5 @@ También puedes ver los microfrontends de forma aislada [la app del comercio](ht
 
 # Stack utilizado
 * Deploy
-    * Amazon S3 ()
+    * Amazon S3 + CloudFront (Servidor)
     * Github Action (Cada vez que se despliega nuevo código en un mf se ejecutará un job que solo desplegará el mf modificado)
