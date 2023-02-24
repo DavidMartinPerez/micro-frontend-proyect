@@ -4,18 +4,19 @@
 |-------------------|------------------------  |------------------|
 |                   | **Marketing (React/MF)** | *Home Page*      |
 |                   |                          | *Pricing Page*   |
-<!-- |                   |                          |                  |
+|                   |                          |                  |
 |                   | **Auth (React/MF)**      | *Sign In Page*   |
 |                   |                          | *Sign Up Page*   |
 |                   |                          |                  |
-|                   | **Dashboard (Vuejs/MF)** | *Dashboard Page* | -->
+<!--|                   | **Dashboard (Vuejs/MF)** | *Dashboard Page* | -->
 
 
 ## Identificación de componentes
 Para que se pueda diferenciar a simple vista cada microfrontends tiene un color especifico
 
-* Marketing - borde en rojo
-* Container - border en azul
+* Container - border en rojo
+* Marketing - borde en azul
+* Auth - border en verde
 
 # Instalación
 ```
@@ -39,6 +40,9 @@ También puedes ver los microfrontends de forma aislada [la app del comercio](ht
 * Dev
     * React
     * Webpack
+* Características
+    * Lazy loading de mf
+    * Comunicación entre mf
 
 # Url proyecto
 [Live project](https://d3tbm2e2e0nz60.cloudfront.net/)

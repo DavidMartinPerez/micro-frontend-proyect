@@ -5,9 +5,11 @@ import App from './App';
 
 
 // Función para renderizar la app
-const mount = (el, { onNavigate, defaultHistory }) => {
+const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
 
-    const history = defaultHistory || createMemoryHistory();
+    const history = defaultHistory || createMemoryHistory({
+        initialEntries: [initialPath]
+    });
 
     if(onNavigate) {
         history.listen(onNavigate);

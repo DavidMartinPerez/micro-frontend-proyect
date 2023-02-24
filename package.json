@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "concurrently --kill-others \"npm run install_container\" \"npm run install_marketing\"",
-    "start": "concurrently --kill-others \"npm run marketing\" \"npm run container\"",
+    "start": "concurrently --kill-others \"npm run marketing\" \"npm run container\" \"npm run auth\"",
     "install_container": "cd ./container && npm install",
     "install_marketing": "cd ./marketing && npm install",
+    "install_auth": "cd ./auth && npm install",
     "container": "cd ./container && npm run start",
     "marketing": "cd ./marketing && npm run start",
+    "auth": "cd ./auth && npm run start",
     "cart": "cd ./cart && npm run start"
   },
   "keywords": [],
