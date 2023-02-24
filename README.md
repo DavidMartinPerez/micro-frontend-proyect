@@ -8,7 +8,7 @@
 |                   | **Auth (React/MF)**      | *Sign In Page*   |
 |                   |                          | *Sign Up Page*   |
 |                   |                          |                  |
-<!--|                   | **Dashboard (Vuejs/MF)** | *Dashboard Page* | -->
+|                   | **Dashboard (Vuejs/MF)** | *Dashboard Page* |
 
 
 ## Identificación de componentes
@@ -17,6 +17,7 @@ Para que se pueda diferenciar a simple vista cada microfrontends tiene un color 
 * Container - border en rojo
 * Marketing - borde en azul
 * Auth - border en verde
+* Dashboard - border en morado
 
 # Instalación
 ```
@@ -39,6 +40,7 @@ También puedes ver los microfrontends de forma aislada [la app del comercio](ht
     * Github Action (Cada vez que se despliega nuevo código en un mf se ejecutará un job que solo desplegará el mf modificado)
 * Dev
     * React
+    * Vuejs
     * Webpack
 * Características
     * Lazy loading de mf

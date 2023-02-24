@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "concurrently --kill-others \"npm run install_container\" \"npm run install_marketing\"",
-    "start": "concurrently --kill-others \"npm run marketing\" \"npm run container\" \"npm run auth\"",
+    "postinstall": "concurrently --kill-others \"npm run install_container\" \"npm run install_marketing\" \"npm run install_dashboard\"",
+    "start": "concurrently --kill-others \"npm run marketing\" \"npm run container\" \"npm run auth\" \"npm run dashboard\"",
     "install_container": "cd ./container && npm install",
     "install_marketing": "cd ./marketing && npm install",
     "install_auth": "cd ./auth && npm install",
+    "install_dashboard": "cd ./dashboard && npm install",
     "container": "cd ./container && npm run start",
     "marketing": "cd ./marketing && npm run start",
     "auth": "cd ./auth && npm run start",
-    "cart": "cd ./cart && npm run start"
+    "cart": "cd ./cart && npm run start",
+    "dashboard": "cd ./dashboard && npm run start"
   },
   "keywords": [],
   "author": "",
